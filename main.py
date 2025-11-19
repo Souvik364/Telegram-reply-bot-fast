@@ -61,9 +61,7 @@ async def type_animation(update: Update, context, text="💬 Bot is typing…", 
 
 # -------------------- FALLBACK RESPONSES --------------------
 FALLBACK_RESPONSES = [
-    "📩 Message sent to admin.",
-    "👍 Got it! Forwarded to admin.",
-    "👀 I have sent this to admin.",
+    "📩 Message sent ✅.",
 ]
 
 
