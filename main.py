@@ -61,7 +61,7 @@ async def type_animation(update: Update, context, text="💬 Bot is typing…", 
 
 # -------------------- FALLBACK RESPONSES --------------------
 FALLBACK_RESPONSES = [
-    "📩 Message sent ✅.",
+    "Message sent ✅.",
 ]
 
 
@@ -72,7 +72,7 @@ async def safe_ask_gemini(prompt: str) -> str:
     except Exception as e:
         if "429" in str(e) or "rate" in str(e).lower():
             return random.choice(FALLBACK_RESPONSES)
-        return "📩 Message sent to admin."
+        return "Message sent ✅"
 
 
 # -------------------- GEMINI REQUEST --------------------
